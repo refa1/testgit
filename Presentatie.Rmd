@@ -4,8 +4,8 @@ author: "Nazir Refa"
 date: "5 August 2015"
 output: html_document
 ---
-
-# Stap 1: 
+#Deel 1
+## Stap 1: 
 Nazir introduceert zich zelf in het kort en vertelt dat Auke en hij een live demonstratie gaan doen over hun nieuwe *workflow* middels een concrete vraagstelling:
 **Wat is het verschil bij de verdeling van de maximale laadsnelheid tussen Outlander en Leaf?**
 
@@ -13,7 +13,7 @@ Nazir introduceert zich zelf in het kort en vertelt dat Auke en hij een live dem
 Voor beide auto modellen maak ik een grafiek waar ik de verdeling van de hoogste kwartierwaarde gedurende een transactie weergeef.
 
 
-# Stap 2:
+## Stap 2:
 Nazir opent de R-Studio scherm (de benodigde packages worden voor de presentatie geladen) en geeft korte uitleg wat men op het interface ziet. 
 Vervolgens opent hij een R Markdown file en geeft de naam: **carmodels**. Hij importeert ook het data bestand **Cartype detection data** uit de Dropbox. In de markdown voert hij de volgende code chunks in en hij de laat de resultaten zien.  
 ```{r, eval=FALSE} 
@@ -27,9 +27,16 @@ trmA <- trm %>%
 ggplot(trmA) + geom_freqpoly(aes(x =w.max, y = ..count.., colour = car.model)) + xlim(c(3000, 4000)) + ylab("Frequency")
 ```
 
-# Stap 3:
-Nazir laat zien hoe hij de output gaat bewaren. 
-1. Hij slaat het bestand **carmodels** op in de Github repo EVflex-backstage. 
+## Stap 3:
+Nazir laat zien hoe hij de output gaat bewaren en delen via Github. In het kort legt hij wat Github. 
+
+1. Hij slaat het bestand **carmodels.Rmd** op zijn local **backstage** repo. 
+2. Open Window Power Shell (verandert de directory naar backstage)
+3. Stagged, commit en pusht de **carmodels.Rmd** naar de **backstage** repo op Github.com.
+
+hj
+
+
 
 
 ***Deel 2 door Auke***
